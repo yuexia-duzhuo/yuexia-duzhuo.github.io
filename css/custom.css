@@ -368,3 +368,34 @@
   #article-container figure.highlight {
     border-radius: 10px;
   }
+
+
+
+
+  .post_cover.left {
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+    width: 100%;
+    height: auto;
+}
+
+.post_cover img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.post_cover img:hover {
+  transform: scale(1.05) rotate(3deg) !important;
+  transition: transform 0.5s ease; /* 添加平滑的过渡效果 */
+}
+
+
+.avatar-img img:hover {
+  animation: none !important;
+  transform: none !important;
+}
+
+
