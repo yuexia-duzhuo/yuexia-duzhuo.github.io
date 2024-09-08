@@ -380,6 +380,39 @@
     height: auto;
 }
 
+.post_cover.right {
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+  width: 100%;
+  height: auto;
+}
+
+
+
+.recent-post-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; /* 防止元素换行 */
+}
+
+.post_cover, .recent-post-info {
+  flex: 1 1 50%; /* 确保两部分各占50% */
+  max-width: 50%;
+}
+
+.post_cover img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+
+
+
 .post_cover img {
     width: 100%;
     height: auto;
